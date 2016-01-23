@@ -19,6 +19,10 @@ public class EmptyUtils {
         return isNull(map) || map.isEmpty();
     }
 
+    public static <T> boolean isEmpty(T[] array) {
+        return isNull(array) || array.length == 0;
+    }
+
     public static boolean isNotEmpty(String text) {
         return !isEmpty(text);
     }
@@ -29,5 +33,9 @@ public class EmptyUtils {
 
     public static boolean isNotEmpty(Map map) {
         return !isEmpty(map);
+    }
+
+    public static <T> boolean isNotEmpty(T[] array) {
+        return !isEmpty(array);
     }
 }
