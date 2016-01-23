@@ -6,6 +6,6 @@ public class NullUtils {
     }
 
     public static boolean isNotNull(Object o) {
-        return o != null;
+        return !isNull(o);
     }
 }
