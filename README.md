@@ -1,6 +1,6 @@
 # README #
 
-* This is a set of utilities to provide "syntactic sugar" and help with clean code. The idea of this library is to remove hard to read operators like "!", help code "read" left to right, reduce null checking and remove nested logic. If you have an idea please feel free to contribute.
+* This is a set of utilities to provide "syntactic sugar" and help with clean code. The idea of this library is to remove hard to read operators like "!", help code "read" left to right, reduce null checking and remove nested logic. If you have any ideas please feel free to contribute.
 
 ### Contributing ###
 * Modify the code and do a pull request
