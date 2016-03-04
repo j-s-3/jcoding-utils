@@ -1,6 +1,6 @@
 # README #
 
-* This is a set of utilities to provided "syntactic sugar"
+* This is a set of utilities to provide "syntactic sugar"
 
 ### Who do I talk to? ###
 
