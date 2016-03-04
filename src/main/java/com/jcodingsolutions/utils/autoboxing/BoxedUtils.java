@@ -1,4 +1,4 @@
-package com.jcodingsolutions.utils.boxedutils;
+package com.jcodingsolutions.utils.autoboxing;
 
 import static com.jcodingsolutions.utils.nullutils.NullUtils.isNotNull;
 
@@ -42,5 +42,29 @@ public interface BoxedUtils {
 
     static double doubleValueOf(Double d1, double d2) {
         return isNotNull(d1) ? d1 : d2;
+    }
+
+    static char characterValueOf(Character c1, char c2) {
+        return isNotNull(c1) ? c1 : c2;
+    }
+
+    static char characterValueOf(Character c) {
+        return characterValueOf(c, '\u0000');
+    }
+
+    static byte byteValueOf(Byte b1, byte b2) {
+        return isNotNull(b1) ? b1 : b2;
+    }
+
+    static byte byteValueOf(Byte b) {
+        return byteValueOf(b, (byte) 0);
+    }
+
+    static short shortValueOf(Short s1, short s2) {
+        return isNotNull(s1) ? s1 : s2;
+    }
+
+    static short shortValueOf(Short s) {
+        return shortValueOf(s, (short) 0);
     }
 }

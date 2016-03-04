@@ -1,4 +1,4 @@
-package com.jcodingsolutions.utils.emptyutils;
+package com.jcodingsolutions.utils.empty;
 
 import java.util.Collection;
 import java.util.Map;

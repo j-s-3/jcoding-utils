@@ -1,4 +1,4 @@
-package com.jcodingsolutions.utils.emptyutils;
+package com.jcodingsolutions.utils.empty;
 
 import org.junit.Test;
 
@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import static com.jcodingsolutions.utils.emptyutils.EmptyUtils.isEmpty;
-import static com.jcodingsolutions.utils.emptyutils.EmptyUtils.isNotEmpty;
+import static com.jcodingsolutions.utils.empty.EmptyUtils.isEmpty;
+import static com.jcodingsolutions.utils.empty.EmptyUtils.isNotEmpty;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
