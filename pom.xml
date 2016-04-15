@@ -8,6 +8,17 @@
     <artifactId>jcoding-utils</artifactId>
     <version>1.12</version>
 
+    <distributionManagement>
+        <repository>
+            <id>jcoding.repo.write</id>
+            <url>${jcoding.repo.write.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>jcoding.repo.write</id>
+            <url>${jcoding.repo.write.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
