@@ -6,19 +6,16 @@
 
     <groupId>com.jcodingsolutions</groupId>
     <artifactId>jcoding-utils</artifactId>
-    <version>1.13</version>
+    <version>1.14</version>
 
     <distributionManagement>
         <repository>
-            <id>59.central</id>
-            <name>59.artifactory-releases</name>
-            <url>http://192.168.0.59:8081/artifactory/ext-release-local</url>
+            <id>jcoding.repo.write</id>
+            <url>${jcoding.repo.write.url}</url>
         </repository>
         <snapshotRepository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>59.snapshots</id>
-            <name>59.artifactory-snapshots</name>
-            <url>http://192.168.0.59:8081/artifactory/ext-snapshot-local</url>
+            <id>jcoding.repo.write</id>
+            <url>${jcoding.repo.write.url}</url>
         </snapshotRepository>
     </distributionManagement>
 
