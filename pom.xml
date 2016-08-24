@@ -6,16 +6,21 @@
 
     <groupId>com.jcodingsolutions</groupId>
     <artifactId>jcoding-utils</artifactId>
-    <version>1.14</version>
+    <version>1.15</version>
+
+    <properties>
+        <powermock.version>1.6.5</powermock.version>
+    </properties>
 
     <distributionManagement>
         <repository>
-            <id>jcoding.repo.write</id>
-            <url>${jcoding.repo.write.url}</url>
+            <id>${repository.id}</id>
+            <url>${repository.url}</url>
         </repository>
         <snapshotRepository>
-            <id>jcoding.repo.write</id>
-            <url>${jcoding.repo.write.url}</url>
+            <id>${snapshot.repository.id}</id>
+            <uniqueVersion>false</uniqueVersion>
+            <url>${snapshot.repository.url}</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -45,7 +50,43 @@
             <version>4.10</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <repository.id>jcoding.repo.write</repository.id>
+                <repository.url>${jcoding.repo.write.url}</repository.url>
+                <snapshot.repository.id>jcoding.repo.write</snapshot.repository.id>
+                <snapshot.repository.url>${jcoding.repo.write.url}</snapshot.repository.url>
+            </properties>
+        </profile>
+        <profile>
+            <id>remsdaq-build</id>
+            <properties>
+                <repository.id>59.central</repository.id>
+                <repository.url>http://192.168.0.59:8081/artifactory/ext-release-local</repository.url>
+                <snapshot.repository.id>59.snapshot</snapshot.repository.id>
+                <snapshot.repository.url>http://192.168.0.59:8081/artifactory/ext-snapshot-local</snapshot.repository.url>
+            </properties>
+        </profile>
+    </profiles>
 
 
 </project>
