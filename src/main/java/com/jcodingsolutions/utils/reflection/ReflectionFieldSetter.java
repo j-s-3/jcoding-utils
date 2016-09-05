@@ -12,7 +12,7 @@ public class ReflectionFieldSetter<T> extends ReflectionField<T> {
         super(type, fieldName);
     }
 
-    public void trySetField(T object, String value) {
+    public void trySetField(T object, Object value) {
         try {
             Field needCellsRebuilt = getDeclaredField();
             needCellsRebuilt.setAccessible(true);
