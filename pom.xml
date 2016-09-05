@@ -6,7 +6,7 @@
 
     <groupId>com.jcodingsolutions</groupId>
     <artifactId>jcoding-utils</artifactId>
-    <version>1.15</version>
+    <version>1.16</version>
 
     <properties>
         <powermock.version>1.6.5</powermock.version>
