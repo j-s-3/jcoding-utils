@@ -12,7 +12,7 @@
 
 ### Who do I talk to? ###
 
-* Email: joe@redjava.co.uk
+* Email: jlstephens89@gmail.com
 * Twitter: @komanchi89
 
 ## License ##
